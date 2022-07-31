@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../image/alarm.jpg);
+    background-size: cover;
+}
+.section{
+    width: 440px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-70%);
+
+}
+.section h1{
+    font-size: 38px;
+    margin: 30px 0;
+    font-weight: 500;
+}
+.section .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.section .content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+.section .content .column{
+    border-radius: 5px;
+    width: calc(100% / 3 - 5px);
+  
+
+}
+.section .content .column select{
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 19px;
+    padding: 0 10px;
+    border-radius: 5px;
+
+}
+.section button{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 15px 0;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(50deg, #81d3c7, #efafae);
+}
+@media  (max-width: 991.98px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: lightblue url(../image/alarm2.png) no-repeat fixed center; 
+
+    }
+
+        .section{
+            width: 90%;
+            transform: translateY(-80%);
+        
+        }
+        .section button {
+            background-image: linear-gradient(50deg, #bd6534, #ffffff);}
+}
