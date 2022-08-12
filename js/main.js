@@ -4,7 +4,9 @@ let button = document.querySelector("button");
 let content = document.querySelector(".content");
 let timeAlarm,
   isAlarm = false;
-ringAlarm = new Audio("../image/sound.mp3");
+ringAlarm = new Audio("https://nada-medhat229.github.io/Alarm/image/sound.mp3");
+console.log(ringAlarm.play());
+
 for (let i = 12; i > 0; i--) {
   i = i < 10 ? "0" + i : i;
   let option = `<option value="${i}">${i}</option>`;
